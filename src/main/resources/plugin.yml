@@ -1,0 +1,4 @@
+name: SimpleCasino
+version: ${project.version}
+main: simplecasino.simplecasino.SimpleCasino
+api-version: 1.13

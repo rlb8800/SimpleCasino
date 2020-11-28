@@ -8,6 +8,7 @@ public final class SimpleCasino extends JavaPlugin {
     public void onEnable() {
         // Plugin startup logic
         System.out.println("Yay the plugin works");
+        //works?
 
     }
 

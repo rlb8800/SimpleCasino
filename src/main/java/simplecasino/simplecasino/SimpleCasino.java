@@ -10,13 +10,7 @@ public final class SimpleCasino extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        // Plugin startup logic
-
-        if (!setupEconomy() ) {
-            System.out.println("No Economy plugin detected");
-            getServer().getPluginManager().disablePlugin(this);
-            return;
-        }
+        // Plugin startup logic      
 
     }
 

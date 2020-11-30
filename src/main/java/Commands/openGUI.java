@@ -24,7 +24,7 @@ public class openGUI implements CommandExecutor {
                 //TODO
             }
             if(args.length == 2) {
-                int betAmt = args[1];
+                int betAMT=Integer.parseInt(args[1]);
                 Inventory inv = Bukkit.createInventory(null, 45, "Gambling Machine");
                 ItemStack redpane = new ItemStack(Material.RED_STAINED_GLASS_PANE);
                 ItemStack greenpane = new ItemStack(Material.GREEN_STAINED_GLASS_PANE);

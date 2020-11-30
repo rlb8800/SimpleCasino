@@ -65,11 +65,16 @@ public class SimpleCasino extends JavaPlugin {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if (label.equalsIgnoreCase("gamble")){
-            if (!(sender instanceof  Player)){
+            if (!(sender instanceof Player)){
                 return true;
             }
-            Player player = (Player) sender;
-            spin(player);
+            if(sender instanceof Player){
+                Player player = (Player) sender;
+                if(args.length != 2) {
+                    //TODO
+                    player.chat("You must type /gamble bet --> bet = your amount that you want to gamble");
+                }
+                spin(player);}
         }
         return false;
     }

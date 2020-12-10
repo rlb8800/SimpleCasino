@@ -2,3 +2,7 @@ name: SimpleCasino
 version: ${project.version}
 main: simplecasino.simplecasino.SimpleCasino
 api-version: 1.13
+commands:
+  gamble:
+    description: opens the gui
+    usage:
